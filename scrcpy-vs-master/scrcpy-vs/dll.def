@@ -1,0 +1,7 @@
+LIBRARY "scrcpy-vs-dll"
+EXPORTS
+RegistVideoCB @1
+RegistScrcpyLogCB @2
+RunScrcpy @3
+CloseScrcpy @4
+SetADBFolderPath @5
