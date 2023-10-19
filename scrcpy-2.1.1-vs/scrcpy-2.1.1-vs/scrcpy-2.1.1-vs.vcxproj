@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5f25c08d-c77d-4f13-9e11-e96a26948b3a}</ProjectGuid>
+    <RootNamespace>scrcpy211vs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;__WIN32;_X86_;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)$(ProjectName)\ffmpeg\include;$(SolutionDir)$(ProjectName)\SDL2;$(SolutionDir)$(ProjectName)\src;$(SolutionDir)$(ProjectName)\libusb\include;$(SolutionDir)$(ProjectName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(solutionDir)$(ProjectName)\SDL2\lib\x86;$(solutionDir)$(ProjectName)\ffmpeg\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adb\adb.cpp" />
+    <ClCompile Include="src\adb\adb_device.cpp" />
+    <ClCompile Include="src\adb\adb_parser.cpp" />
+    <ClCompile Include="src\adb\adb_tunnel.cpp" />
+    <ClCompile Include="src\audio_player.cpp" />
+    <ClCompile Include="src\cli.cpp" />
+    <ClCompile Include="src\clock.cpp" />
+    <ClCompile Include="src\compat.cpp" />
+    <ClCompile Include="src\controller.cpp" />
+    <ClCompile Include="src\control_msg.cpp" />
+    <ClCompile Include="src\decoder.cpp" />
+    <ClCompile Include="src\delay_buffer.cpp" />
+    <ClCompile Include="src\demuxer.cpp" />
+    <ClCompile Include="src\device_msg.cpp" />
+    <ClCompile Include="src\display.cpp" />
+    <ClCompile Include="src\file_pusher.cpp" />
+    <ClCompile Include="src\fps_counter.cpp" />
+    <ClCompile Include="src\frame_buffer.cpp" />
+    <ClCompile Include="src\icon.cpp" />
+    <ClCompile Include="src\input_manager.cpp" />
+    <ClCompile Include="src\keyboard_inject.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mouse_inject.cpp" />
+    <ClCompile Include="src\opengl.c" />
+    <ClCompile Include="src\options.cpp" />
+    <ClCompile Include="src\packet_merger.cpp" />
+    <ClCompile Include="src\receiver.cpp" />
+    <ClCompile Include="src\recorder.cpp" />
+    <ClCompile Include="src\scrcpy.cpp" />
+    <ClCompile Include="src\screen.cpp" />
+    <ClCompile Include="src\server.cpp" />
+    <ClCompile Include="src\trait\frame_source.cpp" />
+    <ClCompile Include="src\trait\packet_source.cpp" />
+    <ClCompile Include="src\util\acksync.cpp" />
+    <ClCompile Include="src\util\average.cpp" />
+    <ClCompile Include="src\util\bytebuf.cpp" />
+    <ClCompile Include="src\util\file.cpp" />
+    <ClCompile Include="src\util\getopt_long.c" />
+    <ClCompile Include="src\util\intmap.cpp" />
+    <ClCompile Include="src\util\intr.cpp" />
+    <ClCompile Include="src\util\log.cpp" />
+    <ClCompile Include="src\util\memory.cpp" />
+    <ClCompile Include="src\util\net.cpp" />
+    <ClCompile Include="src\util\net_intr.cpp" />
+    <ClCompile Include="src\util\process.cpp" />
+    <ClCompile Include="src\util\process_intr.cpp" />
+    <ClCompile Include="src\util\rand.cpp" />
+    <ClCompile Include="src\util\str.cpp" />
+    <ClCompile Include="src\util\strbuf.cpp" />
+    <ClCompile Include="src\util\term.cpp" />
+    <ClCompile Include="src\util\thread.cpp" />
+    <ClCompile Include="src\util\tick.cpp" />
+    <ClCompile Include="src\util\timeout.cpp" />
+    <ClCompile Include="src\v4l2_sink.cpp" />
+    <ClCompile Include="src\version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\adb\adb.h" />
+    <ClInclude Include="src\adb\adb_device.h" />
+    <ClInclude Include="src\adb\adb_parser.h" />
+    <ClInclude Include="src\adb\adb_tunnel.h" />
+    <ClInclude Include="src\android\input.h" />
+    <ClInclude Include="src\android\keycodes.h" />
+    <ClInclude Include="src\audio_player.h" />
+    <ClInclude Include="src\cli.h" />
+    <ClInclude Include="src\clock.h" />
+    <ClInclude Include="src\common.h" />
+    <ClInclude Include="src\compat.h" />
+    <ClInclude Include="src\controller.h" />
+    <ClInclude Include="src\control_msg.h" />
+    <ClInclude Include="src\coords.h" />
+    <ClInclude Include="src\decoder.h" />
+    <ClInclude Include="src\delay_buffer.h" />
+    <ClInclude Include="src\demuxer.h" />
+    <ClInclude Include="src\device_msg.h" />
+    <ClInclude Include="src\display.h" />
+    <ClInclude Include="src\events.h" />
+    <ClInclude Include="src\file_pusher.h" />
+    <ClInclude Include="src\fps_counter.h" />
+    <ClInclude Include="src\frame_buffer.h" />
+    <ClInclude Include="src\icon.h" />
+    <ClInclude Include="src\input_events.h" />
+    <ClInclude Include="src\input_manager.h" />
+    <ClInclude Include="src\keyboard_inject.h" />
+    <ClInclude Include="src\mouse_inject.h" />
+    <ClInclude Include="src\opengl.h" />
+    <ClInclude Include="src\options.h" />
+    <ClInclude Include="src\packet_merger.h" />
+    <ClInclude Include="src\receiver.h" />
+    <ClInclude Include="src\recorder.h" />
+    <ClInclude Include="src\scrcpy.h" />
+    <ClInclude Include="src\screen.h" />
+    <ClInclude Include="src\server.h" />
+    <ClInclude Include="src\trait\frame_sink.h" />
+    <ClInclude Include="src\trait\frame_source.h" />
+    <ClInclude Include="src\trait\key_processor.h" />
+    <ClInclude Include="src\trait\mouse_processor.h" />
+    <ClInclude Include="src\trait\packet_sink.h" />
+    <ClInclude Include="src\trait\packet_source.h" />
+    <ClInclude Include="src\util\acksync.h" />
+    <ClInclude Include="src\util\audiobuf.h" />
+    <ClInclude Include="src\util\average.h" />
+    <ClInclude Include="src\util\binary.h" />
+    <ClInclude Include="src\util\bytebuf.h" />
+    <ClInclude Include="src\util\file.h" />
+    <ClInclude Include="src\util\getopt.h" />
+    <ClInclude Include="src\util\intmap.h" />
+    <ClInclude Include="src\util\intr.h" />
+    <ClInclude Include="src\util\log.h" />
+    <ClInclude Include="src\util\memory.h" />
+    <ClInclude Include="src\util\net.h" />
+    <ClInclude Include="src\util\net_intr.h" />
+    <ClInclude Include="src\util\process.h" />
+    <ClInclude Include="src\util\process_intr.h" />
+    <ClInclude Include="src\util\rand.h" />
+    <ClInclude Include="src\util\str.h" />
+    <ClInclude Include="src\util\strbuf.h" />
+    <ClInclude Include="src\util\term.h" />
+    <ClInclude Include="src\util\thread.h" />
+    <ClInclude Include="src\util\tick.h" />
+    <ClInclude Include="src\util\timeout.h" />
+    <ClInclude Include="src\util\vecdeque.h" />
+    <ClInclude Include="src\util\vector.h" />
+    <ClInclude Include="src\v4l2_sink.h" />
+    <ClInclude Include="src\version.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

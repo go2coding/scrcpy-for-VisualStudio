@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c64e219c-b113-4610-8a85-fe69fe4c25aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\adb">
+      <UniqueIdentifier>{e31d4351-44f9-45e2-8160-1a0a14b5f9ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\android">
+      <UniqueIdentifier>{8fdf9365-2f3d-46ef-b68c-8bca9acc4772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\trait">
+      <UniqueIdentifier>{2d199a1b-183c-45c1-bcb6-2ee5b2c2c8a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{065fc05b-15ee-4b11-bed3-f8d3ecf7fe4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adb\adb.cpp">
+      <Filter>src\adb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adb\adb_device.cpp">
+      <Filter>src\adb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adb\adb_parser.cpp">
+      <Filter>src\adb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adb\adb_tunnel.cpp">
+      <Filter>src\adb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\acksync.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\average.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\bytebuf.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\file.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\getopt_long.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\intmap.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\intr.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\log.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\memory.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\net.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\net_intr.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\process.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\process_intr.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\rand.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\str.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\strbuf.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\term.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\thread.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\tick.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\timeout.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trait\frame_source.cpp">
+      <Filter>src\trait</Filter>
+    </ClCompile>
+    <ClCompile Include="src\trait\packet_source.cpp">
+      <Filter>src\trait</Filter>
+    </ClCompile>
+    <ClCompile Include="src\audio_player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cli.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\clock.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compat.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\control_msg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delay_buffer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\demuxer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device_msg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\display.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file_pusher.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fps_counter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frame_buffer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\icon.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\keyboard_inject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mouse_inject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\packet_merger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\receiver.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\recorder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scrcpy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\server.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\v4l2_sink.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\adb\adb.h">
+      <Filter>src\adb</Filter>
+    </ClInclude>
+    <ClInclude Include="src\adb\adb_device.h">
+      <Filter>src\adb</Filter>
+    </ClInclude>
+    <ClInclude Include="src\adb\adb_parser.h">
+      <Filter>src\adb</Filter>
+    </ClInclude>
+    <ClInclude Include="src\adb\adb_tunnel.h">
+      <Filter>src\adb</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\input.h">
+      <Filter>src\android</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\keycodes.h">
+      <Filter>src\android</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\acksync.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\audiobuf.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\average.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\binary.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\bytebuf.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\file.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\getopt.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\intmap.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\intr.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\log.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\memory.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\net.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\net_intr.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\process.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\process_intr.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\rand.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\str.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\strbuf.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\term.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\thread.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\tick.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\timeout.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\vecdeque.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\vector.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trait\frame_sink.h">
+      <Filter>src\trait</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trait\frame_source.h">
+      <Filter>src\trait</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trait\key_processor.h">
+      <Filter>src\trait</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trait\mouse_processor.h">
+      <Filter>src\trait</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trait\packet_sink.h">
+      <Filter>src\trait</Filter>
+    </ClInclude>
+    <ClInclude Include="src\trait\packet_source.h">
+      <Filter>src\trait</Filter>
+    </ClInclude>
+    <ClInclude Include="src\audio_player.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cli.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\clock.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\compat.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\control_msg.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\controller.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\coords.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\delay_buffer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\demuxer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device_msg.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\display.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\events.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\file_pusher.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fps_counter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\frame_buffer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\icon.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input_events.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input_manager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\keyboard_inject.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mouse_inject.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\options.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\packet_merger.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\receiver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\recorder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scrcpy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\screen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\server.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\v4l2_sink.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\version.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
